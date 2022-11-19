@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PatungBuddha_Tengah
       objectReference: {fileID: 0}
+    - target: {fileID: 7711731423054117478, guid: 238f51d0653705f42835b310719f631b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 238f51d0653705f42835b310719f631b, type: 3}
 --- !u!1001 &517246809
@@ -275,6 +279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PatungBuddha_Selatan
       objectReference: {fileID: 0}
+    - target: {fileID: 1210349633698809545, guid: a4ecd1059a7a1b943a73a41b8e9cd9cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4ecd1059a7a1b943a73a41b8e9cd9cf, type: 3}
 --- !u!1001 &639186955
@@ -287,6 +295,10 @@ PrefabInstance:
     - target: {fileID: 2508400149788723442, guid: 648cdd05e6fa5684099fcf8d10ae2b3f, type: 3}
       propertyPath: m_Name
       value: PatungBuddha_Barat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508400149788723442, guid: 648cdd05e6fa5684099fcf8d10ae2b3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3214979014933170002, guid: 648cdd05e6fa5684099fcf8d10ae2b3f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -459,6 +471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PatungBuddha_Timur
       objectReference: {fileID: 0}
+    - target: {fileID: 3336218238898950347, guid: b7d66562108cb5f429f1eb2cdefee5db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6013238288827214467, guid: b7d66562108cb5f429f1eb2cdefee5db, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -535,6 +551,10 @@ PrefabInstance:
     - target: {fileID: 4473749316349619167, guid: 240a858868e5e7a438179829a6d3f279, type: 3}
       propertyPath: m_Name
       value: PatungBuddha_Utara
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473749316349619167, guid: 240a858868e5e7a438179829a6d3f279, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5275324699446249682, guid: 240a858868e5e7a438179829a6d3f279, type: 3}
       propertyPath: m_RootOrder
@@ -741,6 +761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stupa_Tertutup
       objectReference: {fileID: 0}
+    - target: {fileID: 267268929130432730, guid: a4f2920c31103eb41980e8ee86aecd1f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f2920c31103eb41980e8ee86aecd1f, type: 3}
 --- !u!1001 &3578536456524009570
@@ -798,6 +822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stupa_Terbuka
       objectReference: {fileID: 0}
+    - target: {fileID: 3578536456524949379, guid: 624f203b01cdea647a4b61e9835ab9c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 624f203b01cdea647a4b61e9835ab9c9, type: 3}
 --- !u!1001 &5542040675684147689
@@ -854,6 +882,10 @@ PrefabInstance:
     - target: {fileID: 5542040675137132507, guid: 451f7adb75aecb44e9fef17d3ff10f8f, type: 3}
       propertyPath: m_Name
       value: Borobudur_Full
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542040675137132507, guid: 451f7adb75aecb44e9fef17d3ff10f8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451f7adb75aecb44e9fef17d3ff10f8f, type: 3}
