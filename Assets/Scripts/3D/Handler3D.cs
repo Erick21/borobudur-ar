@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Handler : MonoBehaviour
+public class Handler3D : MonoBehaviour
 {
     [SerializeField] GameObject _item1, _item2, _item3, _item4, _item5, _item6, _item7;
     [SerializeField] GameObject _arrowUp, _arrowDown, _barDescription;
@@ -70,5 +71,10 @@ public class Handler : MonoBehaviour
         _arrowUp.SetActive(!active);
         _arrowDown.SetActive(active);
         _barDescription.SetActive(active);
+    }
+
+    public void GoToARMode()
+    {
+        SceneManager.LoadScene("AR");
     }
 }
