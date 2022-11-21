@@ -6,29 +6,9 @@ public class ZoomRotateTwo : MonoBehaviour
     [Header("Zoom Settings")]
     [SerializeField] float _minSize = .25f;
     [SerializeField] float _maxSize = 1.5f;
-    bool _isRotating;
 
     Vector3 _mouseReference;
     float _rotVelocity;
-
-    void RotateObject(Vector2 pos)
-    {
-        float _sensitivity = .25f;
-
-        if (!_isRotating)
-        {
-            _isRotating = true;
-            _mouseReference = Input.mousePosition;
-        }
-        else
-        {
-            Vector3 _mouseOffset = (Input.mousePosition - _mouseReference);
-            _rotVelocity = -(_mouseOffset.x) * _sensitivity;
-            transform.Rotate(0, _rotVelocity, 0);
-
-            _mouseReference = Input.mousePosition;
-        }
-    }
 
     void CheckLastVelocity()
     {
@@ -80,12 +60,13 @@ public class ZoomRotateTwo : MonoBehaviour
     void Update()
     {
         if (Input.touchCount == 1)
-            RotateObject(Input.GetTouch(0).position);
+        {
+            // Do nothing
+        }
         else if (Input.touchCount == 2 && Input.GetTouch(0).phase == TouchPhase.Moved && Input.GetTouch(1).phase == TouchPhase.Moved)
             ZoomObject(Input.GetTouch(0), Input.GetTouch(1));
         else
         {
-            _isRotating = false;
             CheckLastVelocity();
         }
     }
