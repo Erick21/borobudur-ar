@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ZoomRotate : MonoBehaviour
+public class ZoomRotateTwo : MonoBehaviour
 {
 
     [Header("Zoom Settings")]
@@ -24,7 +24,7 @@ public class ZoomRotate : MonoBehaviour
         {
             Vector3 _mouseOffset = (Input.mousePosition - _mouseReference);
             _rotVelocity = -(_mouseOffset.x) * _sensitivity;
-            transform.Rotate(0, 0, _rotVelocity);
+            transform.Rotate(0, _rotVelocity, 0);
 
             _mouseReference = Input.mousePosition;
         }
@@ -40,7 +40,7 @@ public class ZoomRotate : MonoBehaviour
             );
 
             _rotVelocity -= deltaVelocity;
-            transform.Rotate(0, 0, _rotVelocity);
+            transform.Rotate(0, _rotVelocity, 0);
         }
     }
 
