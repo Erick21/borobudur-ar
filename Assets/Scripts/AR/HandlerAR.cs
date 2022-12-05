@@ -1,5 +1,4 @@
 using System.Collections;
-using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,7 +6,7 @@ using UnityEngine.UI;
 public class HandlerAR : MonoBehaviour
 {
     [SerializeField] Image _screenshot;
-    [SerializeField] GameObject _topContainer, _bottomContainer;
+    [SerializeField] GameObject _topContainer, _bottomContainer, _barInfo;
     //readonly string IMAGE_NAME = Application.persistentDataPath + "/borobudur-ar.png";
 
     public void CloseApp()
@@ -68,5 +67,10 @@ public class HandlerAR : MonoBehaviour
     public void GoTo3DMode()
     {
         SceneManager.LoadScene("3D");
+    }
+
+    public void ShowInfo(bool active)
+    {
+        _barInfo.SetActive(active);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Handler3D : MonoBehaviour
 {
     [SerializeField] GameObject _item1, _item2, _item3, _item4, _item5, _item6, _item7, _item8;
-    [SerializeField] GameObject _arrowUp, _arrowDown, _barDescription;
+    [SerializeField] GameObject _arrowUp, _arrowDown, _barDescription, _barInfo;
     [SerializeField] TMP_Text _textDescription;
     [SerializeField] GameObject _model1, _model2, _model3, _model4, _model5, _model6, _model7, _model8;
 
@@ -98,6 +98,11 @@ public class Handler3D : MonoBehaviour
         _arrowUp.SetActive(!active);
         _arrowDown.SetActive(active);
         _barDescription.SetActive(active);
+    }
+
+    public void ShowInfo(bool active)
+    {
+        _barInfo.SetActive(active);
     }
 
     public void GoToARMode()
